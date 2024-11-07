@@ -41,3 +41,11 @@ p{
     justify-content: center;
     gap: 80px;
 }
+.produtos-servicos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 70px;
+}
