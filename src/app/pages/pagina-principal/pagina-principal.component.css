@@ -3,14 +3,16 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    margin-top: 40px;
     font-size: 2rem;
     color: #1C449C;
+    flex-direction: column;
+    gap: 40px;
 }
 
 
 .inicio{
-    width: 80%;
+    width: 70%;
     background-color:  #CCCCCC;
     border-radius: 20px;
     justify-content: center;
