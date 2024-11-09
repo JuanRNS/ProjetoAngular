@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaPrincipalComponent } from './pagina-principal.component';
+import { AmericaCafeComponent } from './america-cafe.component';
 
-describe('PaginaPrincipalComponent', () => {
-  let component: PaginaPrincipalComponent;
-  let fixture: ComponentFixture<PaginaPrincipalComponent>;
+describe('AmericaCafeComponent', () => {
+  let component: AmericaCafeComponent;
+  let fixture: ComponentFixture<AmericaCafeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaginaPrincipalComponent]
+      imports: [AmericaCafeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaPrincipalComponent);
+    fixture = TestBed.createComponent(AmericaCafeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
