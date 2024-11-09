@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AmericaCafeComponent } from './components/america-cafe/america-cafe.component';
-import { OndeEstamosComponent } from './components/onde-estamos/onde-estamos.component';
+import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-principal.component';
+import { ProdutosServicosComponent } from './components/produtos-servicos/produtos-servicos.component';
+import { FormsContatoComponent } from './components/forms-contato/forms-contato.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AmericaCafeComponent, OndeEstamosComponent],
+  imports: [RouterOutlet,PaginaPrincipalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

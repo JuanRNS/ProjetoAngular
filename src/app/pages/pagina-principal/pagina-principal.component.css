@@ -14,20 +14,12 @@ section{
 .inicio{
     width: 70%;
     background-color:  #CCCCCC;
-    color: #62222C;
-}
-.moldura{
-    background-color:  #FEF6E2;
-    width: 80%;
     border-radius: 20px;
-    justify-content: justify;
+    justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: row;
     padding: 30px;
     box-shadow: 2px 2px 2px 2px #00000040;
-}
-.cafe{
-    margin-left: 4rem;
 }
