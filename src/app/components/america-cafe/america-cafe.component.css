@@ -5,7 +5,6 @@ section{
     width: 100%;
     margin-top: 40px;
     font-size: 2rem;
-<<<<<<<< HEAD:src/app/pages/pagina-principal/pagina-principal.component.css
     color: #1C449C;
     flex-direction: column;
     gap: 40px;
@@ -15,13 +14,11 @@ section{
 .inicio{
     width: 70%;
     background-color:  #CCCCCC;
-========
     color: #62222C;
 }
 .moldura{
     background-color:  #FEF6E2;
     width: 80%;
->>>>>>>> 5128a2bf041caa71760e2883769582937afa38c5:src/app/components/america-cafe/america-cafe.component.css
     border-radius: 20px;
     justify-content: justify;
     align-items: center;
