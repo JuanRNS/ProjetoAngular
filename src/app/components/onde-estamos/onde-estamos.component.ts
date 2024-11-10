@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import {environment as env} from '../../../environments/environment';
 @Component({
@@ -9,22 +9,35 @@ import {environment as env} from '../../../environments/environment';
   styleUrl: './onde-estamos.component.css'
 })
 export class OndeEstamosComponent implements OnInit,OnDestroy {
-  mapa: any;
+  @Input() latitude:number = 0;
+  @Input() longitude:number = 0;  
+  @Input() zoom:number = 13;
+  @Input() tileLayerUrl:string = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  constructor() { }
 
+  mapa!: L.Map;
+  
   ngOnInit(): void {
-      this.mapa = L.map('mapa').setView([-8.31134802594188, -36.03589714511856], 30);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 18,
-      }).addTo(this.mapa);
-      L.marker([-8.31134802594188, -36.03589714511856]).addTo(this.mapa);
+    this.inicializarMapa();
   }
 
-
   ngAfterViewInit(): void {
-      this.mapa.invalidateSize();
+    this.mapa.invalidateSize();
   }
 
   ngOnDestroy(): void {
-      this.mapa.remove();
+    this.mapa.remove();
+  }
+
+  private inicializarMapa(): void {
+    this.mapa = L.map('mapa').setView([this.latitude, this.longitude], this.zoom);
+
+    L.tileLayer(this.tileLayerUrl, {
+      maxZoom: 18,
+    }).addTo(this.mapa);
+
+    L.marker([this.latitude, this.longitude]).addTo(this.mapa);
   }
 }
+
+
