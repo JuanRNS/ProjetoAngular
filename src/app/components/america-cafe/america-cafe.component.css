@@ -3,8 +3,7 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 40px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #1C449C;
     flex-direction: column;
     gap: 40px;
@@ -12,7 +11,7 @@ section{
 
 
 .inicio{
-    width: 70%;
+    width: 50%;
     background-color:  #CCCCCC;
     color: #62222C;
 }
@@ -25,9 +24,35 @@ section{
     text-align: center;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 15px;
     box-shadow: 2px 2px 2px 2px #00000040;
 }
-.cafe{
-    margin-left: 4rem;
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logosFim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.corpo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
 }
