@@ -4,10 +4,11 @@ section{
     align-items: center;
     width: 100%;
     margin-top: 40px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #1C449C;
     flex-direction: column;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 
@@ -22,4 +23,11 @@ section{
     flex-direction: row;
     padding: 30px;
     box-shadow: 2px 2px 2px 2px #00000040;
+}
+.mapas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
