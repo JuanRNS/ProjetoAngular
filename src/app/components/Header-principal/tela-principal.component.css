@@ -25,13 +25,17 @@
     flex-direction: row;
     list-style: none;
     gap: 70px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .menu :hover {
     color: #2b65e2;
     cursor: pointer;
     transition: 0.5s;
+    transform: scale(1.1);
+}
+.menu img{
+    width: 60px;
 }
 
 a {

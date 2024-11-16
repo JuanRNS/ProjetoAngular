@@ -1,0 +1,11 @@
+.corpo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 80%;
+    gap: 10px;
+}
+.corpo h1{
+    color: #0D7ABF;
+    font-size: 1.8rem;
+}

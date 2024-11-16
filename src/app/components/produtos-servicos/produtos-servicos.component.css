@@ -8,6 +8,10 @@
     font-size: 1.3rem;
     gap: 10px;
 }
+.produtos-servicos h1{
+    color: #0D7ABF;
+    font-size: 1.8rem;
+}
 .tittle-servicos{
     color:#0D7ABF;
     display: flex;

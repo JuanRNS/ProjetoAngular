@@ -28,5 +28,6 @@ export class LeafletMapComponent implements AfterViewInit{
       maxZoom: 19,
       attribution: '© OpenStreetMap contributors'
     }).addTo(this.map);
+    L.marker([this.latitude, this.longitude]).addTo(this.map);
   }
 }
