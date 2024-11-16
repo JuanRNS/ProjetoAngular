@@ -5,11 +5,12 @@ import { AmericaCafeComponent } from '../../components/america-cafe/america-cafe
 import { OndeEstamosComponent } from '../../components/onde-estamos/onde-estamos.component';
 import { TelaPrincipalComponent } from '../../components/Header-principal/tela-principal.component';
 import { MapasComponent } from '../mapas/mapas.component';
+import { RederizaMapasComponent } from "../../components/rederiza-mapas/rederiza-mapas.component";
 
 @Component({
   selector: 'app-pagina-principal',
   standalone: true,
-  imports: [ProdutosServicosComponent,FormsContatoComponent,TelaPrincipalComponent,AmericaCafeComponent,OndeEstamosComponent,MapasComponent],
+  imports: [ProdutosServicosComponent, FormsContatoComponent, TelaPrincipalComponent, AmericaCafeComponent, MapasComponent],
   templateUrl: './pagina-principal.component.html',
   styleUrl: './pagina-principal.component.css'
 })
