@@ -1,7 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
 
 .map-container {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   height: 320px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+

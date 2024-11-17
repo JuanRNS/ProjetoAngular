@@ -13,6 +13,7 @@ export class LeafletMapComponent implements AfterViewInit{
   @Input() latitude: number = 0;
   @Input() longitude: number = 0;
   @Input() zoom: number = 13;
+  @Input() text: string ='';
 
   private map!: L.Map;
 
