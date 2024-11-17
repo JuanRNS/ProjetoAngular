@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { OndeEstamosComponent } from '../../components/onde-estamos/onde-estamos.component';
 import { RederizaMapasComponent } from "../../components/rederiza-mapas/rederiza-mapas.component";
 
 @Component({

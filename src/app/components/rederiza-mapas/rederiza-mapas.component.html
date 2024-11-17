@@ -1,5 +1,5 @@
 <div class="map-container">
-  <app-leaflet-map *ngFor="let map of maps" [mapId]="map.id" [latitude]="map.latitude" [longitude]="map.longitude"
-    [zoom]="map.zoom">
+  <app-leaflet-map class="leaflet-map" *ngFor="let map of maps" [mapId]="map.id" [latitude]="map.latitude" [longitude]="map.longitude"
+    [zoom]="map.zoom" [text]="map.text">
   </app-leaflet-map>
 </div>
