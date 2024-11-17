@@ -7,4 +7,5 @@ body{
     min-width: 100%;
     font-family: montserrat;
     min-height: 100vh;
+    background-image: url(/fundoBody.png);
 }
