@@ -22,72 +22,30 @@ section{
     padding: 30px;
     box-shadow: 2px 2px 2px 2px #00000040;
 }
-.textoPosto{
+.imagmePosto{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 70vw;
 }
-.logoAmerica{
-    display: flex;
-    flex-wrap: wrap;
-    width: 20vw;
-}
-.imagemPosto{
-    display: flex;
-    flex-wrap: wrap;
-    width: 20vw;
-}
-/*@media screen and (max-width: 1200px) {
-    section{
-        font-size: 95%;
-    }
-    .inicio{
-        display: flex;
-        width: 90vw;
-    }
-}
-@media screen and (max-width: 991px) {
-    section{
-        font-size: 90%;
-    }
-    .inicio{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-    .inicio img{
+
+@media screen and (max-width: 1200px) {
+    .imagemPosto{
         display: flex;
         width: 30vw;
     }
-    .textoPosto{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 }
-@media screen and (max-width: 768px) {
-    section{
-        font-size: 80%;
-        width: 50vw;
-    }
+
+@media screen and (max-width: 950px) {
     .inicio{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 20px;
+        width: 90vw;
+        gap: 15px;
+    }
+    .imagemPosto{
+        display: flex;
         width: 50vw;
     }
-    .textoPosto{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-}*/
+}
