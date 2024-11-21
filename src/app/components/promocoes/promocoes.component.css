@@ -1,0 +1,112 @@
+#section{
+    background-color: #FEBE10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 20%;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 4%;
+    padding-bottom: 6%;
+    align-items: flex-start;
+}
+.img_america{
+    height: 50%;
+    height: 50%;
+    align-self: flex-start;
+    align-items: baseline;
+}
+.Produtos_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 30%;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+    box-shadow: #383838;
+    margin-left: 2.5rem;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+    box-shadow: #383838;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.card3{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+    box-shadow: #383838;
+}
+.img{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 35%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+.text_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+.titulo_produto{
+    color: #1E1E1E;
+    font-size: 150%;
+}
+.text_produto{
+    color: #FFF9F9;
+    font-size: 120%;
+}
+
+.Produtos_2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 30%;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
