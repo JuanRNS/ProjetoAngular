@@ -3,6 +3,7 @@ import { FormsContatoComponent } from '../../components/forms-contato/forms-cont
 import { TelaPrincipalComponent } from '../../components/Header-principal/tela-principal.component';
 import { MapasComponent } from '../mapas/mapas.component';
 import { RederizaMapasComponent } from "../../components/rederiza-mapas/rederiza-mapas.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-pagina-principal',
