@@ -1,9 +1,8 @@
 <app-tela-principal></app-tela-principal>
 <section>
     <div class="inicio">
-        <div><img src="/fotoPosto.png" class="imagemPosto"></div>
-        <div>
-            <img src="/logoAmerica.png">
+        <div class="textoPosto">
+            <img src="/logoAmerica.png" class="logoAmerica">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repellat! Dignissimos, veritatis,
                 accusantium voluptate harum minus reprehenderit quod fugiat ducimus, nobis nostrum id quas perspiciatis.
                 Reprehenderit explicabo nobis quo nulla.</p>
@@ -11,9 +10,92 @@
                 aliquid eum molestiae, perspiciatis quibusdam atque optio eaque officiis doloribus? Nesciunt itaque
                 corrupti vitae rem quod!</p>
         </div>
+        <div><img src="/fotoPosto.png" class="imagemPosto"></div>
     </div>
-    <app-produtos-servicos></app-produtos-servicos>
-    <app-america-cafe></app-america-cafe>
-    <app-mapas class="mapas"></app-mapas>
-    <app-forms-contato style="width: 80%;"></app-forms-contato>
+
+    <div class="produtos-servicos">
+        <h1 class="tittle-servicos">Produtos e Serviços</h1>
+        <p>
+            Não importa qual seja seu veículo. Temos os mais diversos combustíveis, produtos e equipamentos para você
+            rodar
+            por ruas e estradas com conforto e tranquilidade.
+        </p>
+        <div class="container-shell">
+            <img src="/logoShell.png">
+            <p>Para isso, contamos com a parceria da maior produtora e distribuidora de combutíveis do mundo. Confira
+                nossos
+                produtos:</p>
+        </div>
+        <div class="container-gasolinas">
+            <div class="coluna-gasolinas">
+                <img src="/shellGasolinaComum.png" alt="">
+                <img src="/shellEtanol.png" alt="">
+                <img src="/shellDiesels500.png" alt="">
+                <img src="/shellDiesels10.png" alt="">
+            </div>
+            <div class="coluna-gasolinas">
+                <img src="/shellVpowerAdtv.png" alt="">
+                <img src="/shellVpower.png" alt="">
+                <img src="/shellVpowerPremium.png" alt="">
+                <img src="/shellEvolux.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="produtos-servicos2">
+        <p>Comprometidos com a sustentabilidade e o meio ambiente, estamos em busca de implementar de diversos postos da
+            nossa rede o nosso mais novo produto: SHELL RECHARGE</p>
+        <img src="/shellRecharge.png">
+        <p>A solução de recarga rápida para veículos elétricos! <br></p>
+        <p>Esta solução é ideal para o motorista que procura mais autonomia e eficiência para recargar seu veículo
+            elétrico.
+            As estações Shell Recharge oferecem uma experiência completa para os seus usuários, desde uma plataforma
+            intuitiva, até formas simplificadas de pagamento.</p>
+    </div>
+
+
+    <div class="americaCorpo">
+        <div class="moldura">
+            <img src="/AmericaCafe/MOLDURAAMERICACAFÉ.png" class="lateral">
+            <div class="corpo">
+                <div class="corpo2">
+                    <div class="logos">
+                        <img src="/AmericaCafe/LOGOAMERICACAFE.png">
+                        <img src="/AmericaCafe/mais.png">
+                        <img src="/AmericaCafe/LOGOSHELLSELECT.png">
+                    </div>
+                    <div class="textoAmerica">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero
+                            assumenda odit culpa quasi doloremque! Iure, earum sed.
+                            Repellat,
+                            ipsam aperiam! Nihil dolor velit nemo magni animi rem.
+                            Nihil,
+                            culpa
+                            animi.
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quae,
+                            quia.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Eveniet
+                            consequuntur veritatis repellendus perferendis est officiis
+                            iure
+                            cumque. In impedit distinctio rem, odit, vitae aliquam
+                            corporis
+                            eveniet ipsam neque veritatis natus?
+                        </p>
+                    </div>
+                </div>
+                <div class="logosFim">
+                    <img src="/AmericaCafe/americacafe1.png" class="imagem3">
+                    <div class="imagem12">
+                        <img src="/AmericaCafe/americacafe.png" class="imagem1">
+                        <img src="/AmericaCafe/americacafe2.png" class="imagem2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<app-mapas></app-mapas>
