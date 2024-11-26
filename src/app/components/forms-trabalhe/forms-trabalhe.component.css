@@ -1,0 +1,119 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #1C449C;
+}
+.corpo{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.formulario-corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #0D7ABF;
+    font-size: 1.8rem;
+}
+
+p {
+    display: flex;
+    text-align: justify;
+    font-size: 2rem;
+    color: #1C449C;
+    margin-left: 10%;
+}
+
+.forms {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.forms input {
+    border: none;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 15px;
+}
+.rua-numero {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.rua-numero #num {
+    display: flex;
+    width: 10%;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}
+.cidade-uf {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.cidade-uf select {
+    display: flex;
+    width: 10%;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}
+#mensagem {
+    border: none;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #717272;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #252525;
+}
+.pagina {
+    display: none; 
+}
+
+.ativa {
+    display: block; 
+}
+
+.final{
+    text-align: center;
+}
+.final2{
+    text-align: center;
+}
+strong {
+    color: #333;
+}
