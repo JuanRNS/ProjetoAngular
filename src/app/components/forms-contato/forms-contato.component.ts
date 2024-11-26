@@ -11,12 +11,4 @@ import { Router } from '@angular/router';
 })
 export class FormsContatoComponent {
 
-
-  constructor(private router: Router){
-
-  } 
-  paginaFormsContato(){
-     this.router.navigate(['/forms-contato']);
-  }
- 
 }

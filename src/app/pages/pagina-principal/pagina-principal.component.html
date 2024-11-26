@@ -46,7 +46,16 @@
         </div>
         <div class="container-gasolinas">
             <div class="coluna-gasolinas">
-                <img src="/shellGasolinaComum.png" alt="">
+                <button (click)="togglePopup()"><img src="/shellGasolinaComum.png" alt=""></button>
+                
+                <div class="popup" *ngIf="isPopupVisible">
+                    <div class="popup-content">
+                      <p>Combustível comum sem aditivos adicionais, utilizado em motores a gasolina, sendo uma opção mais básica e acessível.</p>
+                      <button (click)="togglePopup()" class="btn-fechar-pop-up">Fechar</button>
+                    </div>
+                  </div>
+
+                    
                 <img src="/shellEtanol.png" alt="">
             </div>
             <div class="coluna-gasolinas">
