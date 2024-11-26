@@ -1,128 +1,152 @@
-section{
+.sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 80px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #1C449C;
     flex-direction: column;
-    gap: 45px;
+    gap: 35px;
     flex-wrap: wrap;
+    margin-bottom: 10px;
+}
 
-}
-.corpo-principal-produtosservicos{
+.corpo-principal-produtosservicos {
     display: flex;
-    flex-direction: row;
-    max-width: 80%;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-.inicio{
-    background-color:  #CCCCCC;
+
+.inicio {
+    width: 70vw;
+    display: flex;
+    background-color: #CCCCCC;
     border-radius: 20px;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
     box-shadow: 2px 2px 2px 2px #00000040;
     gap: 10px;
-    min-width: 380px;
+    height: 500px;
 }
-.inicio p{
+
+.inicio .texto-posto p {
     color: #1C449C;
-    line-height: 1.6rem;
+    line-height: 2rem;
 }
+
 .imagem-Posto {
-    max-width: 450px;
-    max-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.texto-posto{
+
+.imagem-Posto img {
+    max-width: 450px;
+    max-height: 440px;
+}
+
+.texto-posto {
     display: flex;
     flex-wrap: wrap;
-}
-/*produtos-servicos*/
-
-.produtos-servicos{
-    display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    max-width: 650px;;
-    background-color: #CCCCCC;;
-    box-shadow: 2px 2px 2px 2px #00000040;
-    border-radius: 20px;
-    flex-direction: column;
-    font-size: 1.6rem;
-    gap: 5px;
+    justify-content: center;
     margin: 10px;
 }
-.tittle-servicos{
-    color:#0D7ABF;
+
+/*produtos-servicos*/
+
+.produtos-servicos-corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.8rem;
+    color: #1C449C;
+    margin-bottom: 10px;
+}
+
+.produtos-servicos {
+    display: flex;
+    width: 45%;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tittle-servicos {
+    color: #0D7ABF;
     display: flex;
     justify-content: center;
     align-self: center;
     text-align: center;
 }
-.container-shell{
+
+.container-shell {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
-.container-gasolinas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    width: 50%;
+
+.container-gasolinas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
 }
-.coluna-gasolinas{
+
+.coluna-gasolinas {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
-.coluna-gasolinas img{
+
+.coluna-gasolinas img {
     display: flex;
     width: 150px;
 }
-.produtos-servicos2{
+
+.produtos-servicos2 {
     display: flex;
+    width: 60%;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     gap: 10px;
-    font-size: 1.6rem;
 }
 
 
 /*america-cafe*/
-
-.americaCorpo{
+.america {
     display: flex;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #1C449C;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.americaCorpo {
+    display: flex;
+    width: 80%;
     justify-content: center;
     align-items: center;
 }
 
-.inicio{
-    width: 50%;
-    background-color:  #CCCCCC;
-    color: #62222C;
-    display: flex;
-}
-.moldura{
-    background-color:  #FEF6E2;
+.moldura {
+    background-color: #FEF6E2;
     min-width: 1356px;
     border-radius: 20px;
-    justify-content: justify;
     align-items: center;
     text-align: center;
     display: flex;
@@ -130,7 +154,8 @@ section{
     padding: 15px;
     box-shadow: 2px 2px 2px 2px #00000040;
 }
-.corpo{
+
+.corpo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,26 +163,29 @@ section{
     flex-direction: column;
     gap: 40px;
 }
-.logos{
+
+.logos {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.textoAmerica{
+
+.textoAmerica {
     display: flex;
     text-align: center;
     flex-direction: column;
-    font-size: 1.3rem;
 }
-.logosFim{
+
+.logosFim {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
 }
-.imagem12{
+
+.imagem12 {
     display: flex;
     flex-direction: row;
 }

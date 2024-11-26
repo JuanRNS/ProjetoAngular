@@ -1,27 +1,25 @@
 .footer{
     display: flex;
+    bottom: 0;
     background-color: #E7E7E7;
     justify-content:center;
     align-items: center;
     gap: 30px;	
-    min-width:1246px;
+    width: 100%;
     box-shadow: 5px 4px 4px 5px #00000040;
-    margin-top: 20px;
 }
 .texto-r{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: right;
     font-size: 1.5rem;
     text-decoration: none;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 .texto-l{
     display: flex;
     flex-direction: column;
-    text-align: left;
     font-size: 1.5rem;
     text-decoration: none;
 }

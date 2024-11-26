@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { routes } from '../../app.routes';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forms-contato',
@@ -9,4 +11,12 @@ import { Component } from '@angular/core';
 })
 export class FormsContatoComponent {
 
+
+  constructor(private router: Router){
+
+  } 
+  paginaFormsContato(){
+     this.router.navigate(['/forms-contato']);
+  }
+ 
 }

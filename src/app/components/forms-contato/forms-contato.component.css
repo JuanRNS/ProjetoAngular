@@ -1,8 +1,32 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 .corpo{
     gap: 30px;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+}
+.cabeca-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cabeca-contato h1{
+    color: #0D7ABF;
+}
+.cabeca-contato p{
+    color: #1C449C;
+    font-size: 1.8rem;
 }
 
 .formulario-corpo {
@@ -10,25 +34,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 40px;
     width: 100%;
-}
-
-h1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #0D7ABF;
-    font-size: 1.8rem;
-}
-
-p {
-    display: flex;
-    text-align: justify;
-    font-size: 2rem;
-    color: #1C449C;
-    margin-left: 10%;
 }
 
 .forms {
@@ -55,4 +63,13 @@ p {
     width: 100%;
     padding: 10px;
     height: 100px;
+}
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 10px;
 }
