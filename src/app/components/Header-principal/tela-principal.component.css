@@ -2,11 +2,12 @@
 
 .header {
     background-color: #E7E7E7;
-    height: 80px;
-    width: 100%;
+    min-width: 1245px;
     display: flex;
     box-shadow: 0px 4px 4px 0px #00000040;
-    font-family: Montserrat;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .nav {
     display: flex;
@@ -22,7 +23,7 @@
     flex-direction: row;
     list-style: none;
     gap: 70px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .menu :hover {
@@ -41,30 +42,31 @@ a {
 /* MENU MOBILE */
 
 .menu-mobile{
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 999999;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 300;
     width: 30%;
-    background-color: #9c9c9c;
     width: 0%;
+    background-color: #9c9c9c;
     overflow: hidden;
     transition: 0.5s;
 }
 .nav-mobile{
     display: flex;
     justify-content: center;
-    text-align: right;
+    text-align: left;
     flex-direction: column;
     list-style: none;
     gap: 70px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+;
 }
 .menu-lista-mobile{
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -72,13 +74,13 @@ a {
     padding: 20px 4%;
 }
 .menu-lista-mobile :hover {
-    color: #2b65e2;
+    
     cursor: pointer;
 }
 .btn-fechar{
     display: flex;
     padding: 20px;
-    justify-content: start;
+    justify-content: end;
     align-items: end;
 }
 .btn-fechar img{
@@ -104,7 +106,7 @@ a {
         display: flex;
         display: flex;
         position: absolute;
-        right: 0;
+        left: 0;
         color: black;
         width: 60px;
         cursor: pointer;
