@@ -1,0 +1,123 @@
+/*Esta é a section geral da página, onde está a estilização geral*/
+#section{
+    background-color: #FEBE10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+/*Esta é a estilização geral do titulo, ela vai conter as divs do 
+titulo e a imagem que o acompanha*/
+.titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 92%;
+    height: 12%;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    margin-left: 3.5%;
+    margin-bottom: 5%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/*Está compõe a justificação dos elementos supracitados*/
+.cabeca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Esta da apenas o tamnho da imagem que acompanha o titulo*/
+.img_america{
+    height: 60%;
+}
+/*Está é a div que contem o primeiro row de cards dos produtos*/
+.Produtos_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 25%;
+    width: 95%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+/*Esta é a estilização geral de todos os cardes que é composta
+até o card3, que os cards do primeiro e segundo row estão nomeados
+do mesmo jeito, isto é: card, card2 e card3 para ambas as row*/
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+    margin-left: 2.5rem;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.card3{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    background-color: #cf0e0e;
+}
+/*Dentro de cada card a uma imagem, porém todas as imagem foram
+nomedas como a mesma classe, e esta é a estilização de todas as
+imagens dos cards*/
+.img{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 35%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+/*Esta é a estilização da div que contem todos os textos do card
+nela tem tanto o titulo do produto quanto a descrição*/
+.text_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+/*Está é a estilização do titulo dos produtos dentro do card*/
+.titulo_produto{
+    color: #1E1E1E;
+    font-size: 150%;
+}
+/*Está é a estilização do texto dentro do produto*/
+.text_produto{
+    color: #FFF9F9;
+    font-size: 120%;
+}
+/*Está é a estilização do 2º row de produtos*/
+.Produtos_2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 25%;
+    width: 95%;
+    margin-top: 1rem;
+}

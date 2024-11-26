@@ -67,7 +67,7 @@ export class RederizaMapasComponent {
       latitude: -8.26174260399012,  
       longitude: -35.95772968022331,
        zoom: 16,
-       text: 'América Av Brasil. Av. Brasil, Número 1440, Universitári, Caruaru' 
+       text: 'América Av Brasil. Av. Brasil, Número 1440, Universitário, Caruaru' 
       },
     { id: 'map10', 
       latitude: -8.276136720952698,  
