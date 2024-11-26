@@ -3,13 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-principal.component';
 import { FormsContatoComponent } from './components/forms-contato/forms-contato.component';
 import { MapasComponent } from './pages/mapas/mapas.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { PromocoesComponent } from "./components/promocoes/promocoes.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PaginaPrincipalComponent, MapasComponent, FooterComponent, PromocoesComponent],
+  imports: [RouterOutlet,PaginaPrincipalComponent,MapasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
