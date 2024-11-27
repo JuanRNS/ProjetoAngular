@@ -46,29 +46,57 @@
         </div>
         <div class="container-gasolinas">
             <div class="coluna-gasolinas">
-                <button (click)="togglePopup()"><img src="/shellGasolinaComum.png" alt=""></button>
-                
-                <div class="popup" *ngIf="isPopupVisible">
-                    <div class="popup-content">
-                      <p>Combustível comum sem aditivos adicionais, utilizado em motores a gasolina, sendo uma opção mais básica e acessível.</p>
-                      <button (click)="togglePopup()" class="btn-fechar-pop-up">Fechar</button>
-                    </div>
-                  </div>
+                <button (click)="openPopup(0)" class="btn-image"><img src="/shellGasolinaComum.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[0]" (close)="closePopup(0)">
+                    <p>Shell Gasolina Comum:
+                        Combustível comum sem aditivos adicionais, utilizado em motores a gasolina, sendo uma opção mais
+                        básica e acessível.</p>
+                </app-pop-up>
+                <button (click)="openPopup(1)" class="btn-image"><img src="/shellEtanol.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[1]" (close)="closePopup(1)">
+                    <p>Shell Etanol Comum:
+                        Etanol hidratado comum, uma alternativa mais limpa e renovável, amplamente usado em carros flex.
+                    </p>
+                </app-pop-up>
+            </div>
+            <div class="coluna-gasolinas">
+                <button (click)="openPopup(2)" class="btn-image"><img src="/shellDiesels500.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[2]" (close)="closePopup(2)">
+                    <p> Shell Diesel S500:
+                         Diesel com teor de enxofre reduzido (500 ppm), indicado para veículos mais antigos ou que não exijam diesel S10.</p>
+                </app-pop-up>
+                <button (click)="openPopup(3)" class="btn-image"><img src="/shellDiesels10.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[3]" (close)="closePopup(3)">
+                    <p>Shell Diesel S10 Comum:
+                        Diesel com teor de enxofre ultrabaixo (10 ppm), obrigatório em veículos mais modernos com tecnologia de controle de emissões.</p>
+                </app-pop-up>
+            </div>
+            <div class="coluna-gasolinas">
+                <button (click)="openPopup(4)" class="btn-image"><img src="/shellVpowerAdtv.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[4]" (close)="closePopup(4)">
+                    <p>Shell V-Power Gasolina Aditivada:
+                        Gasolina com aditivos que ajudam na limpeza e manutenção do motor, melhorando o desempenho e reduzindo resíduos.
+                    </p>
+                </app-pop-up>                        
+                <button (click)="openPopup(5)" class="btn-image"><img src="/shellVpower.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[5]" (close)="closePopup(5)">
+                    <p>Shell V-Power Etanol Aditivado:
+                        Etanol com aditivos que oferecem proteção ao motor, proporcionando maior eficiência.
+                    </p>
+                </app-pop-up>
+            </div>
+            <div class="coluna-gasolinas">
+                <button (click)="openPopup(6)" class="btn-image"><img src="/shellVpowerPremium.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[6]" (close)="closePopup(6)">
+                    <p>Shell V-Power Racing Gasolina Premium:
 
-                    
-                <img src="/shellEtanol.png" alt="">
-            </div>
-            <div class="coluna-gasolinas">
-                <img src="/shellDiesels500.png" alt="">
-                <img src="/shellDiesels10.png" alt="">
-            </div>
-            <div class="coluna-gasolinas">
-                <img src="/shellVpowerAdtv.png" alt="">
-                <img src="/shellVpower.png" alt="">
-            </div>
-            <div class="coluna-gasolinas">
-                <img src="/shellVpowerPremium.png" alt="">
-                <img src="/shellEvolux.png" alt="">
+                        Combustível premium com formulação especial, voltado para alta performance, oferecendo máxima potência e limpeza.</p>
+                </app-pop-up>
+                <button (click)="openPopup(7)" class="btn-image"><img src="/shellEvolux.png" alt=""></button>
+                <app-pop-up [isVisible]="isPopupVisible[7]" (close)="closePopup(7)">
+                    <p>Shell Evolux Diesel S10 Aditivado:
+                        Diesel S10 com aditivos avançados para proteção e eficiência do motor, reduzindo o desgaste e os resíduos.</p>
+                </app-pop-up>
             </div>
         </div>
     </div>
@@ -130,6 +158,4 @@
         </div>
     </div>
 </section>
-
-
 <app-mapas></app-mapas>
