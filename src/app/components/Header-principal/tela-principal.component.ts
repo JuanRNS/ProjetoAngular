@@ -1,10 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
+import { FormsContatoComponent } from '../forms-contato/forms-contato.component';
 
 @Component({
   selector: 'app-tela-principal',
   standalone: true,
-  imports: [],
+  imports: [FormsContatoComponent],
   templateUrl: './tela-principal.component.html',
   styleUrl: './tela-principal.component.css'
 })
@@ -22,6 +23,13 @@ export class TelaPrincipalComponent {
         });
       }
       );
+    }
+  }
+
+  scrollToElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }
