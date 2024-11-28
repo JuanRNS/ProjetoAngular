@@ -9,7 +9,7 @@ import { TelaPrincipalComponent } from "./components/Header-principal/tela-princ
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PaginaPrincipalComponent, MapasComponent, FooterComponent, TelaPrincipalComponent],
+  imports: [RouterOutlet, FooterComponent, TelaPrincipalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
