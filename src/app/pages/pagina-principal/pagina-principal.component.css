@@ -4,30 +4,31 @@
     align-items: center;
     width: 100%;
     margin-top: 80px;
-    font-size: 1.8rem;
-    color: #1C449C;
+    font-size: 1.8rem; /* tamanho da fonte */
+    color: #1C449C; /* cor do texto */
     flex-direction: column;
     gap: 35px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* permite que os elementos fiquem em linhas diferentes */
     margin-bottom: 10px;
-}
+} /* display flexivel, centralizada horizontalmente, com uma margem superior de 80 pixels, direciona os elementos para uma coluna,
+com um afastamento de 35 pixels entre os elementos, e com uma largura de 100%, com uma margem inferior de 10 pixels */
 
 .corpo-principal-produtosservicos {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} /* display flexivel, centralizada horizontalmente, com um afastamento de ponta a ponta entra os elementos */
 
 .inicio {
-    width: 70vw;
-    display: flex;
-    background-color: #CCCCCC;
-    border-radius: 20px;
-    justify-content: center;
-    box-shadow: 2px 2px 2px 2px #00000040;
-    gap: 10px;
-    height: 500px;
-}
+    width: 70vw; /* largura da pagina */
+    display: flex; /* display flexivel */
+    background-color: #CCCCCC; /* cor de fundo */
+    border-radius: 20px;/* borda arredondada */
+    justify-content: center;/* centraliza horizontalmente */
+    box-shadow: 2px 2px 2px 2px #00000040;/* box shadow */
+    gap: 10px;/* afastamento externo */
+    height: 500px;/* altura da pagina */
+} /*infrormações sobre o fundo onde fica os textos da empresa*/
 
 .inicio .texto-posto p {
     color: #1C449C;
@@ -38,12 +39,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} /*alinhamento da imagem*/
 
 .imagem-Posto img {
     max-width: 450px;
     max-height: 440px;
-}
+} /* tamanho da imagem */
 
 .texto-posto {
     display: flex;
@@ -52,7 +53,7 @@
     text-align: center;
     justify-content: center;
     margin: 10px;
-}
+} /* alinhamento do texto */
 
 /*produtos-servicos*/
 
@@ -65,7 +66,7 @@
     font-size: 1.8rem;
     color: #1C449C;
     margin-bottom: 10px;
-}
+} /*alinhamento dos textos*/
 
 .produtos-servicos {
     display: flex;
@@ -97,7 +98,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
-}
+} /*alinhamento dos produtos*/
 
 .coluna-gasolinas {
     display: flex;
@@ -105,12 +106,12 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-}
+}/*alinhamento dos produtos*/
 
 .coluna-gasolinas img {
     display: flex;
     width: 150px;
-}
+}/*tamanho da imagens dos produtos*/
 
 .produtos-servicos2 {
     display: flex;
@@ -120,7 +121,7 @@
     text-align: center;
     flex-direction: column;
     gap: 10px;
-}
+} /*alinhamento dos produtos*/
 
 
 /*america-cafe*/
@@ -134,14 +135,14 @@
     color: #1C449C;
     font-size: 1.8rem;
     margin-bottom: 10px;
-}
+} /*alinhamento dos textos*/
 
 .americaCorpo {
     display: flex;
     width: 80%;
     justify-content: center;
     align-items: center;
-}
+} /*alinhamento dos textos*/
 
 .moldura {
     background-color: #FEF6E2;
@@ -153,7 +154,7 @@
     flex-direction: row;
     padding: 15px;
     box-shadow: 2px 2px 2px 2px #00000040;
-}
+} /*alinhamento do fundo da página*/
 
 .corpo {
     display: flex;
@@ -162,20 +163,20 @@
     text-align: center;
     flex-direction: column;
     gap: 40px;
-}
+} /*alinhamento dos textos*/
 
 .logos {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} /*alinhamento das logos*/
 
 .textoAmerica {
     display: flex;
     text-align: center;
     flex-direction: column;
-}
+} /*alinhamento dos textos*/
 
 .logosFim {
     display: flex;

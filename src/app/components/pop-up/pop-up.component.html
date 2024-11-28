@@ -1,5 +1,5 @@
-<div class="popup-overlay" *ngIf="isVisible" (click)="closePopup()">
-    <div class="popup-content" (click)="$event.stopPropagation()">
+<div class="popup-overlay" *ngIf="isVisible" (click)="closePopup()"> <!--faz com que o popup seja fechado ao clicar fora dele-->
+    <div class="popup-content" (click)="$event.stopPropagation()"><!--faz com que o popup seja fechado ao clicar dentro dele-->
       <ng-content></ng-content>
       <button (click)="closePopup()">Fechar</button>
     </div>

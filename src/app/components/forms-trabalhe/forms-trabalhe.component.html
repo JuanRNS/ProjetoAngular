@@ -1,24 +1,29 @@
 <section class="trabalhe">
-    <div class="cabecalho">
+    <div class="cabecalho"> <!-- cabeçalho da página, onde conta apenas as imagens da empresa-->
         <p><img src="/logoAmerica.png" alt></p>
         <p> <img src="/AmericaCafe/LOGOAMERICACAFE.png" alt></p>
     </div>
     <div class="corpo">
-        <h1>Trabalhe conosco</h1>
+        <h1>Trabalhe conosco</h1> <!--titulo da página-->
         <h3>Se vocé deseja trabalhar conosco, preencha o formulário abaixo: </h3>
-        <div class="formulario-corpo">
-            <div class="forms">
-                <input type="text" class="digitaNome" placeholder="Digite seu nome">
-                <input type="tel" class="Telefone" placeholder="Digite seu telefone">
-                <input type="email" class="e-mail" placeholder="Digite seu e-mail">
+
+        <div class="formulario-corpo"> <!--engoloba os elementos do formulário-->
+
+            <div class="forms"> 
+                <input type="text" class="digitaNome" placeholder="Digite seu nome"> <!--caixa de digitação do nome-->
+                <input type="tel" class="Telefone" placeholder="Digite seu telefone"><!--caixa de digitação do telefone-->
+                <input type="email" class="e-mail" placeholder="Digite seu e-mail"><!--caixa de digitação do e-mail-->
                 <h3>Endereço:</h3>
-                <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP:">
-                <div class="rua-numero">
+                <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP:"> <!--caixa de digitação do cep-->
+
+                <div class="rua-numero"> <!--caixa de digitação da rua e número-->
                     <input type="text" id="rua" name="rua" placeholder="insira seu logradouro" size="40">
                     <input type="text" id="num" name="numero" placeholder="Insira o número" size="1">
                 </div>
-                <input type="text" id="bairro" name="bairro" placeholder="insira seu bairro" size>
-                <div class="cidade-uf">
+
+                <input type="text" id="bairro" name="bairro" placeholder="insira seu bairro" size> <!--caixa de digitação do bairro-->
+
+                <div class="cidade-uf"> <!--caixa de seleção da UF-->
                     <input type="text" id="cidade" name="cidade" placeholder="insira sua cidade" size="40">
                     <select name="UF" id="uf">
                         <option value disabled selected>UF</option>
@@ -54,11 +59,10 @@
 
                 <h3>Anexe seu currículo:</h3>
                 <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .doc, .docx, .pdf" required
-                    placeholder="Anexe seu curriculo">
+                    placeholder="Anexe seu curriculo"> <!--caixa para anexar documentos-->
 
-                <textarea name="mensagem" id="mensagem"
-                    placeholder="Conte um pouco sobre você e sua tragetória:"></textarea>
-                <button type="button" onclick="enviarCurriculo()" class="btn-enviar">
+                <textarea name="mensagem" id="mensagem" placeholder="Conte um pouco sobre você e sua tragetória:"></textarea> <!--caixa de texto para falar sobre suas eperiências-->
+                <button type="button" onclick="enviarCurriculo()" class="btn-enviar"> <!--botão para submeter o formulário-->
                     Enviar curriculo
                 </button>
             </div>

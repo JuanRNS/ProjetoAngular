@@ -1,14 +1,14 @@
 .trabalhe{
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*tamanho da fonte*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    color: #1C449C;
-    margin-bottom: 20px;
-}
+    color: #1C449C; /*cordas da letra*/
+    margin-bottom: 20px; /*espaçamento de baixo*/
+} /* deixa o display flaxivel e centralizado, definindo a altura minima, servindo para a pagina inteira */
 
 .cabecalho{
     display: flex;
@@ -16,13 +16,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}/* deixa o display flaxivel e centralizado, definindo a altura minima*/
 .corpo{
     gap: 30px;
     display: flex;
     width: 80%;
     flex-direction: column;
-}
+}/* centraliza os itens, da um afastamento de 30 pixels, define o tamanho do item em 80% da página 
+e direciona os elementos para uma coluna */
 
 .formulario-corpo {
     display: flex;
@@ -30,14 +31,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-}
+}/* centraliza os itens, da um afastamento de 30 pixels e direciona os elementos para uma coluna */
 
 h1 {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-}
+} /* centraliza os itens */
 
 .forms {
     width: 100%;
@@ -47,25 +48,26 @@ h1 {
     justify-content: center;
     align-items: center;
 
-}
+} /* centraliza os itens, da um afastamento de 40 pixels e direciona os elementos para uma coluna */
 
 .forms input {
-    border: none;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    width: 100%;
-    padding: 15px;
+    border: none; /* sem borda */
+    border-radius: 10px; /* borda arredondada */
+    background-color: #D9D9D9; /* cor de fundo */
+    width: 100%; /* largura */
+    padding: 15px; /* afastamento interno */
 }
+
 .rua-numero {
-    display: flex;
-    width: 100%;
-    gap: 10px;
+    display: flex; /* display flexivel */
+    width: 100%; /* largura */
+    gap: 10px; /* afastamento externo */
 }
 .rua-numero #num {
-    display: flex;
-    width: 10%;
-    border-radius: 15px;
-    background-color: #D9D9D9;
+    display: flex; /* display flexivel */
+    width: 10%; /* largura */
+    border-radius: 15px;/* borda arredondada */
+    background-color: #D9D9D9; /* cor de fundo */
 }
 .cidade-uf {
     display: flex;
@@ -87,12 +89,12 @@ h1 {
     height: 100px;
 }
 .btn-enviar {
-    padding: 10px 15px;
-    background-color: #717272d3;
-    color: #fff;
-    border: 2px solid #717272d3;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 10px 15px; /* afastamento interno */
+    background-color: #717272d3; /* cor de fundo */
+    color: #fff;   /* cor da letra */
+    border: 2px solid #717272d3; /* borda */
+    border-radius: 5px; /* borda arredondada */
+    cursor: pointer; /* cursor */
+    font-size: 16px; /* tamanho da fonte */
 }
 
