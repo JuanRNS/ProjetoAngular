@@ -15,14 +15,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-}
+}/* display flexivel, centralizada horizontalmente, ocupa 100% da largura da pagina*/
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: row;
-    list-style: none;
+    list-style: none; /*sem marcadores*/
     gap: 70px;
     font-size: 1.7rem;
 }
@@ -32,33 +32,33 @@
 }
 
 .menu :hover {
-    color: #2b65e2;
-    cursor: pointer;
-    transition: 0.5s;
-    transform: scale(1.1);
-}
+    color: #2b65e2; /*cor da fonte ao passar o mouse por cima dos elementos*/
+    cursor: pointer; 
+    transition: 0.5s; /*adiciona um efeito de transição ao passar o mouse por cima dos elementos*/
+    transform: scale(1.1); /*adiciona um efeito de escala ao passar o mouse por cima dos elementos*/
+} /*adiciona um efeito de hover ao passar o mouse por cima dos elementos*/
 .menu img{
-    width: 60px;
+    width: 60px; /*tamanho da imagem*/
 }
 a {
-    text-decoration: none;
+    text-decoration: none; /*sem sublinhado*/
 }
 
 /* MENU MOBILE */
 
 .menu-mobile{
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100%; /*altura da pagina*/
+    position: fixed; /*fixa na posição*/
+    top: 0;/*posiciona no topo*/
+    left: 0;/*posiciona na esquerda*/
     z-index: 999999;
-    font-size: 1.5rem;
-    font-weight: 300;
-    width: 30%;
-    width: 0%;
-    background-color: #9c9c9c;
-    overflow: hidden;
-    transition: 0.5s;
+    font-size: 1.5rem; /*tamanho da fonte*/
+    font-weight: 300;/*peso da fonte*/
+    width: 30%;/*largura*/
+    width: 0%;/*largura*/
+    background-color: #9c9c9c;/*cor de fundo*/
+    overflow: hidden;/*oculta o conteudo*/
+    transition: 0.5s;/*adiciona um efeito de transição ao abrir o menu*/
 }
 .nav-mobile{
     display: flex;
