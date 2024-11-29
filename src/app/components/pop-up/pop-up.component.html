@@ -1,0 +1,6 @@
+<div class="popup-overlay" *ngIf="isVisible" (click)="closePopup()"> 
+    <div class="popup-content" (click)="$event.stopPropagation()">
+      <ng-content></ng-content>
+      <button (click)="closePopup()">Fechar</button>
+    </div>
+  </div>

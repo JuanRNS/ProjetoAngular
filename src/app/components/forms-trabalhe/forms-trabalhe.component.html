@@ -1,0 +1,69 @@
+    <section class="trabalhe">
+        <div class="cabecalho">
+            <p><img src="/logoAmerica.png" alt></p>
+            <p> <img src="/AmericaCafe/LOGOAMERICACAFE.png" alt></p>
+        </div>
+        <div class="corpo">
+            <h1>Trabalhe conosco</h1>
+            <h3>Se vocé deseja trabalhar conosco, preencha o formulário abaixo: </h3>
+            <div class="formulario-corpo">
+                <div class="forms">
+                    <form action="" method="post" class="forms">
+                        <input type="text" class="digitaNome" placeholder="Digite seu nome">
+                        <input type="tel" class="Telefone" placeholder="Digite seu telefone">
+                        <input type="email" class="e-mail" placeholder="Digite seu e-mail">
+                        <h3>Endereço:</h3>
+                        <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP:">
+                        <div class="rua-numero">
+                            <input type="text" id="rua" name="logradouro" placeholder="insira seu logradouro" size="40">
+                            <input type="text" id="num" name="numero" placeholder="Insira o número" size="1">
+                        </div>
+                        <input type="text" id="bairro" name="bairro" placeholder="insira seu bairro" size>
+                        <div class="cidade-uf">
+                            <input type="text" id="cidade" name="cidade" placeholder="insira sua cidade" size="40">
+                            <select name="uf" id="uf">
+                                <option value disabled selected>UF</option>
+                                <option value>AC</option>
+                                <option value>AL</option>
+                                <option value>AP</option>
+                                <option value>AM</option>
+                                <option value>BA</option>
+                                <option value>CE</option>
+                                <option value>DF</option>
+                                <option value>ES</option>
+                                <option value>GO</option>
+                                <option value>MA</option>
+                                <option value>MT</option>
+                                <option value>MS</option>
+                                <option value>MG</option>
+                                <option value>PA</option>
+                                <option value>PB</option>
+                                <option value>PR</option>
+                                <option value>PE</option>
+                                <option value>PI</option>
+                                <option value>RJ</option>
+                                <option value>RN</option>
+                                <option value>RS</option>
+                                <option value>RO</option>
+                                <option value>RR</option>
+                                <option value>SC</option>
+                                <option value>SP</option>
+                                <option value>SE</option>
+                                <option value>TO</option>
+                            </select>
+                        </div>
+
+                        <h3>Anexe seu currículo:</h3>
+                        <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .doc, .docx, .pdf"
+                            required placeholder="Anexe seu curriculo">
+
+                        <textarea name="descrição" id="mensagem"
+                            placeholder="Conte um pouco sobre você e sua tragetória:"></textarea>
+                        <button type="button" (click)="onSubmit()" class="btn-enviar">
+                            Enviar curriculo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>

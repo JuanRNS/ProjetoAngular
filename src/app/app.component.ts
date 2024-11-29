@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-principal.component';
-import { FormsContatoComponent } from './components/forms-contato/forms-contato.component';
-import { MapasComponent } from './pages/mapas/mapas.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PromocoesComponent } from "./components/promocoes/promocoes.component";
-
+import { TelaPrincipalComponent } from "./components/Header-principal/tela-principal.component";
+import { PaginaPrincipalComponent } from "./pages/pagina-principal/pagina-principal.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PaginaPrincipalComponent, MapasComponent, FooterComponent, PromocoesComponent],
+  imports: [RouterOutlet, FooterComponent, TelaPrincipalComponent, PaginaPrincipalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
