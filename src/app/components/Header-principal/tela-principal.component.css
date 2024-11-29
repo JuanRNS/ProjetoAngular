@@ -24,8 +24,12 @@ acupa 100% da largura da pagina e com uma box shadow*/
     flex-direction: row;
     list-style: none; /*sem marcadores*/
     gap: 70px;
-    font-size: 1.7rem; /*tamanho da fonte*/
-} /* display flexivel, centralizada horizontalmente, da um afastamento de 70 pixels e direciona para uma linhas */
+    font-size: 1.7rem;
+}
+.menu li {
+    color: #2b65e2;
+    cursor: pointer;
+}
 
 .menu :hover {
     color: #2b65e2; /*cor da fonte ao passar o mouse por cima dos elementos*/

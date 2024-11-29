@@ -7,5 +7,5 @@ import { FormsTrabalheComponent } from './components/forms-trabalhe/forms-trabal
 
 export const routes: Routes = [
   { path: '', component: PaginaPrincipalComponent },
-  { path: 'forms-contato', component: FormsTrabalheComponent },
+  { path: 'forms-trabalhe', component: FormsTrabalheComponent },
 ];

@@ -21,14 +21,16 @@ centralizada horizontalmente com o afastamento de 30 pixels entre os elementos, 
 } /* centraliza os itens, da um afastamento de 10 pixels, define uma margem a esquerda de 10 pixels,
 e direciona os elementos para uma coluna */
 .texto-l{
-    display: flex; /*display flexivel*/
-    flex-direction: column; /*direciona os elementos para uma coluna*/
-    font-size: 1.5rem; /*tamanho da fonte*/
-    text-decoration: none; /*sem sublinhado*/
-} 
-.texto-r a{
-    text-decoration: none; /*sem sublinhado*/
-    color: #1C449C; /*cor da letra*/
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.texto-r li{
+    text-decoration: none;
+    list-style-type: none;
+    color: #1C449C;
+    cursor: pointer;
 }
 .texto-l a{
     text-decoration: none;
