@@ -10,8 +10,6 @@
     font-family: Arial, Helvetica, sans-serif;
 
  }
-/*Esta é a estilização geral do titulo, ela vai conter as divs do 
-titulo e a imagem que o acompanha*/
 .titulo{
     display: flex;
     flex-direction: column;
@@ -79,9 +77,6 @@ do mesmo jeito, isto é: card, card2 e card3 para ambas as row*/
     opacity: 1;
     background-color: #cf0e0e;
 }
-/*Dentro de cada card a uma imagem, porém todas as imagem foram
-nomedas como a mesma classe, e esta é a estilização de todas as
-imagens dos cards*/
 .img{
     display: flex;
     margin-left: 2%;

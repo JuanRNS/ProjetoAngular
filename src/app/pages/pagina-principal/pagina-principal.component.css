@@ -189,7 +189,27 @@
     display: flex;
     flex-direction: row;
 }
+<<<<<<< HEAD
+.color-button {
+    background-color: #FEBE10; 
+    color: rgb(12, 12, 12);
+    border: none;
+    border-radius: 1.0rem;
+    padding: 1.5rem 3rem; 
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    transition: all 0.2s ease
+}
+.color-button:active {
+    background-color:#cf0e0e; 
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+    transform: translateY(0.2rem); 
+}
+=======
 .btn-image{
     border: none;
     cursor: pointer;
 }
+>>>>>>> 059bd5a228d65b56f0c8a49b54eceddb5aacae1f
