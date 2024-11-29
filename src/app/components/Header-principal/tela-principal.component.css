@@ -8,8 +8,8 @@
     position: fixed;
     width: 100%;
     top: 0;
-}/* display flexivel, zerada a margem de cima da página, definido como fixa a sua posição, 
-acupa 100% da largura da pagina e com uma box shadow*/
+    z-index: 99999;
+}
 .nav {
     display: flex;
     justify-content: center;
@@ -68,7 +68,6 @@ a {
     list-style: none;
     gap: 70px;
     font-size: 1.5rem;
-;
 }
 .menu-lista-mobile{
     text-align: left;

@@ -18,8 +18,10 @@ export class TelaPrincipalComponent {
   formsTrabalho(){
     this.router.navigate(['/forms-trabalhe']);
   }
-  paginaPrincipal(){
-    this.router.navigate(['/']);
+  paginaPrincipal() {
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo(0, 0); 
+    });
   }
   americaCafe(){
     document.getElementById('america')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
