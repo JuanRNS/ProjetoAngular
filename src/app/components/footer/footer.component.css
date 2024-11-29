@@ -23,9 +23,11 @@
     font-size: 1.5rem;
     text-decoration: none;
 }
-.texto-r a{
+.texto-r li{
     text-decoration: none;
+    list-style-type: none;
     color: #1C449C;
+    cursor: pointer;
 }
 .texto-l a{
     text-decoration: none;

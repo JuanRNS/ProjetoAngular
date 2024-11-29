@@ -12,10 +12,15 @@
 
 .cabecalho{
     display: flex;
-    min-height: 25vh;
+    width: 100%;
+    min-height: 30vh;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.cabecalho img{
+    display: flex;
+    width: 250px;
 }
 .corpo{
     gap: 30px;

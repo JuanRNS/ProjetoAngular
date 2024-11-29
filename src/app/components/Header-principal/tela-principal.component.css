@@ -25,6 +25,10 @@
     gap: 70px;
     font-size: 1.7rem;
 }
+.menu li {
+    color: #2b65e2;
+    cursor: pointer;
+}
 
 .menu :hover {
     color: #2b65e2;
