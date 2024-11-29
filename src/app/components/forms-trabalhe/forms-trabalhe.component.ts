@@ -12,5 +12,32 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormsTrabalheComponent {
 
-  
+  constructor(  private emailService: EmailRequestService) { }
+  dados = {
+    nome: '',
+    telefone: '',
+    email: '',
+    cep: '',
+    logradouro: '',
+    numero: '',
+    bairro: '',
+    cidade: '',
+    uf: '',
+    descricao: '',
+    arquivo: null
+  };
+
+  ufs = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
+
+  onSubmit() {
+    this.enviarEmail(this.dados);
+  }
+  onFileChange(event: any) {
+    const file = event.target.files[0]; 
+    this.dados.arquivo = file;  
+  }
+
+  enviarEmail(dados:any){
+    this.emailService.enviarEmail(dados).subscribe();
+  }
 }
