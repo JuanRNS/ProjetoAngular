@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { FormsContatoComponent } from '../forms-contato/forms-contato.component';
 import { Router } from '@angular/router';
+import { transition } from '@angular/animations';
 
 @Component({
   selector: 'app-tela-principal',
@@ -17,6 +18,7 @@ export class TelaPrincipalComponent {
 
   formsTrabalho(){
     this.router.navigate(['/forms-trabalhe']);
+    window.scrollTo(0, 0); 
   }
   paginaPrincipal() {
     this.router.navigate(['/']).then(() => {
