@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { FormsContatoComponent } from '../forms-contato/forms-contato.component';
 import { Router } from '@angular/router';
+import { Block } from '@angular/compiler';
 
 @Component({
   selector: 'app-tela-principal',
