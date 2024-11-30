@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { FormsContatoComponent } from '../forms-contato/forms-contato.component';
 import { Router } from '@angular/router';
+import { transition } from '@angular/animations';
 import { Block } from '@angular/compiler';
 
 @Component({
@@ -18,9 +19,12 @@ export class TelaPrincipalComponent {
 
   formsTrabalho(){
     this.router.navigate(['/forms-trabalhe']);
+    window.scrollTo(0, 0); 
   }
-  paginaPrincipal(){
-    this.router.navigate(['/']);
+  paginaPrincipal() {
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo(0, 0); 
+    });
   }
   americaCafe(){
     document.getElementById('america')?.scrollIntoView({ behavior: 'smooth', block: 'start' });

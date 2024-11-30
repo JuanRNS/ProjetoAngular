@@ -4,8 +4,11 @@ import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-princi
 import { RederizaMapasComponent } from './components/rederiza-mapas/rederiza-mapas.component';
 import { FormsContatoComponent } from './components/forms-contato/forms-contato.component';
 import { FormsTrabalheComponent } from './components/forms-trabalhe/forms-trabalhe.component';
+import { PromocoesComponent } from './components/promocoes/promocoes.component';
 
 export const routes: Routes = [
   { path: '', component: PaginaPrincipalComponent },
   { path: 'forms-trabalhe', component: FormsTrabalheComponent },
+  { path: 'mapa', component: RederizaMapasComponent },
+  { path: 'promocoes', component: PromocoesComponent },
 ];

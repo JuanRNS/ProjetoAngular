@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { MapasComponent } from '../mapas/mapas.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -11,6 +12,13 @@ import { MapasComponent } from '../mapas/mapas.component';
   styleUrl: './pagina-principal.component.css'
 })
 export class PaginaPrincipalComponent {
+  constructor(private router: Router) {
+
+  }
+
+  promocoes(){
+    this.router.navigate(['promocoes'])
+  }
 
   isPopupVisible:boolean[] = Array(8).fill(false);
 
