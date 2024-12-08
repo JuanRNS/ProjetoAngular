@@ -8,20 +8,20 @@
             <h3>Se vocé deseja trabalhar conosco, preencha o formulário abaixo: </h3>
             <div class="formulario-corpo">
                 <div class="forms">
-                    <form action="" method="post" class="forms">
-                        <input type="text" class="digitaNome" placeholder="Digite seu nome">
-                        <input type="tel" class="Telefone" placeholder="Digite seu telefone">
-                        <input type="email" class="e-mail" placeholder="Digite seu e-mail">
+                    <form action="" method="post" class="forms" (ngSubmit)="onSubmit()">
+                        <input type="text" class="digitaNome" placeholder="Digite seu nome"  name = "nome" [(ngModel)] = "dados.nome">
+                        <input type="tel" class="Telefone" placeholder="Digite seu telefone" name="telefone" [(ngModel)] = "dados.telefone">
+                        <input type="email" class="e-mail" placeholder="Digite seu e-mail" name="email" [(ngModel)] = "dados.email">
                         <h3>Endereço:</h3>
-                        <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP:">
+                        <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP:" [(ngModel)] = "dados.cep">
                         <div class="rua-numero">
-                            <input type="text" id="rua" name="logradouro" placeholder="insira seu logradouro" size="40">
-                            <input type="text" id="num" name="numero" placeholder="Insira o número" size="1">
+                            <input type="text" id="rua" name="logradouro" placeholder="insira seu logradouro" size="40" [(ngModel)] = "dados.logradouro">
+                            <input type="text" id="num" name="numero" placeholder="Insira o número" size="1" [(ngModel)] = "dados.numero">
                         </div>
-                        <input type="text" id="bairro" name="bairro" placeholder="insira seu bairro" size>
+                        <input type="text" id="bairro" name="bairro" placeholder="insira seu bairro" size [(ngModel)] = "dados.bairro">
                         <div class="cidade-uf">
-                            <input type="text" id="cidade" name="cidade" placeholder="insira sua cidade" size="40">
-                            <select name="uf" id="uf">
+                            <input type="text" id="cidade" name="cidade" placeholder="insira sua cidade" size="40" [(ngModel)] = "dados.cidade">
+                            <select name="uf" id="uf" [(ngModel)] = "dados.uf">
                                 <option value disabled selected>UF</option>
                                 <option value>AC</option>
                                 <option value>AL</option>
@@ -54,12 +54,12 @@
                         </div>
 
                         <h3>Anexe seu currículo:</h3>
-                        <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .doc, .docx, .pdf"
-                            required placeholder="Anexe seu curriculo">
+                        <input type="file" id="arquivo" name="curriculo" accept=".jpg, .jpeg, .png, .doc, .docx, .pdf"
+                            required placeholder="Anexe seu curriculo" [(ngModel)] = "dados.arquivo">
 
-                        <textarea name="descrição" id="mensagem"
-                            placeholder="Conte um pouco sobre você e sua tragetória:"></textarea>
-                        <button type="button" (click)="onSubmit()" class="btn-enviar">
+                        <textarea name="descricao" id="mensagem"
+                            placeholder="Conte um pouco sobre você e sua tragetória:" [(ngModel)] = "dados.descricao"></textarea>
+                        <button type="submit" class="btn-enviar">
                             Enviar curriculo
                         </button>
                     </form>

@@ -14,8 +14,8 @@ export class FormsTrabalheComponent {
 
   constructor(  private emailService: EmailRequestService) { }
   dados = {
-    nome: '',
-    telefone: '',
+    nome: 'nome',
+    telefone: 'telefone',
     email: '',
     cep: '',
     logradouro: '',
@@ -24,20 +24,48 @@ export class FormsTrabalheComponent {
     cidade: '',
     uf: '',
     descricao: '',
-    arquivo: null
+    arquivo: null as string | null
   };
 
   ufs = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
 
-  onSubmit() {
-    this.enviarEmail(this.dados);
-  }
   onFileChange(event: any) {
-    const file = event.target.files[0]; 
-    this.dados.arquivo = file;  
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        this.dados.arquivo = (reader.result as string).split(',')[1]; // Base64 sem o prefixo
+      };
+      reader.readAsDataURL(file); // Lê o arquivo como DataURL
+    }
   }
 
-  enviarEmail(dados:any){
-    this.emailService.enviarEmail(dados).subscribe();
+  enviarEmail(dados: any) {
+    this.emailService.enviarEmail(dados).subscribe(
+      (response) => {
+        console.log('Email enviado com sucesso:', response);
+        alert('E-mail enviado com sucesso!');
+      },
+      (error) => {
+        console.error('Erro ao enviar e-mail:', error);
+        alert('Erro ao enviar o e-mail.');
+      }
+    );
+  }
+  onSubmit() {
+    console.log(this.dados); // Verifique os dados aqui antes de enviar
+    if (this.validarFormulario()) {
+      this.enviarEmail(this.dados);
+    } else {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+  }
+  validarFormulario(): boolean {
+    return (
+      this.dados.nome.trim() &&
+      this.dados.email.trim() &&
+      this.dados.cep.trim() &&
+      this.dados.descricao.trim()
+    ) ? true : false;
   }
 }

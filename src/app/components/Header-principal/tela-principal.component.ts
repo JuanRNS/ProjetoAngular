@@ -35,7 +35,9 @@ export class TelaPrincipalComponent {
   ondeEstamos(){
     document.getElementById('onde-estamos')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-
+  loginCadastro(){
+    this.router.navigate(['/login']);
+  }
   ngAfterViewInit(): void {
     const btnAbrirMenu = document.getElementById('btn-abrir-menu');
     const menuMobile = document.querySelector('.menu-mobile');

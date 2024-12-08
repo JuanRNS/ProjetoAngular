@@ -1,0 +1,23 @@
+<app-login 
+title="Login" 
+primaryBtnText="Entrar agora" 
+secondaryBtnText="Cadastrar"
+(navegar)="navegar()"
+>
+    <form [formGroup]="loginForm">
+        <app-inputs 
+        formControlName="email" 
+        inputName="email" 
+        type="email"
+        label="Email"
+        placeholder="juanramalho@gmail.com">
+        </app-inputs>
+        <app-inputs 
+        formControlName="senha"
+         inputName="senha" 
+         type="password" 
+         label="Senha"
+        placeholder="Sua senha">
+        </app-inputs>
+    </form>
+</app-login>

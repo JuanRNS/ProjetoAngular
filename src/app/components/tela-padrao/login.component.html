@@ -1,0 +1,19 @@
+<main>
+    <section class="container">
+        <div class="container-login">
+            <h2 class="form-title">{{title}}</h2>
+            <ng-content></ng-content>
+            <div class="btn-wrapper">
+                <button class="btn-primary">
+                    {{ primaryBtnText }}
+                </button>
+                <div class="divider">
+                    <div class="line"></div>
+                    <span>or</span>
+                    <div class="line"></div>
+                </div>
+                <button class="btn-secondary" (click)="navegar()">{{ secondaryBtnText }}</button>
+            </div>
+        </div>
+    </section>
+</main>

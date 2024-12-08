@@ -1,0 +1,38 @@
+<app-login
+    title="Crie sua conta"
+    primaryBtnText="Cadastrar" 
+    secondaryBtnText="Entrar agora"
+    (navegar)="navegar()">
+    <form [formGroup]="cadastroForm">
+        <app-inputs
+        formControlName="name"
+        inputName="name"
+        type="text"
+        label="Nome"
+        placeholder="Seu nome completo"
+        ></app-inputs>
+        <app-inputs
+        formControlName="email"
+        inputName="email"
+        type="email"
+        label="Email"
+        placeholder="juanramalho@gmail.com"
+        ></app-inputs>
+        <app-inputs
+        formControlName="password"
+        inputName="password"
+        type="password"
+        label="Senha"
+        placeholder="Sua senha"
+        ></app-inputs>
+        <app-inputs
+        formControlName="passwordConfirm"
+        inputName="passwordConfirm"
+        type="password"
+        label="Confirme sua senha"
+        placeholder="Confirme sua senha"
+        >
+        </app-inputs>
+    </form>
+
+</app-login>
