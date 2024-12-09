@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
-import { LoginComponent } from '../../components/tela-padrao/tela-padrao.component';
+import { Component, Inject } from '@angular/core';
+import { LoginComponent } from '../../components/tela-padrao/login.component';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { InputsComponent } from '../../components/inputs/inputs.component';
 import { Router } from '@angular/router';
+import { LoginService } from '../../../service/login.service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-tela-login',
@@ -14,11 +17,19 @@ import { Router } from '@angular/router';
 export class TelaLoginComponent {
   loginForm! :FormGroup;
 
-  constructor(private router: Router) { 
+  constructor(private router: Router,
+    private http: HttpClient
+  ) { 
     this.loginForm = new FormGroup({
-      email: new FormControl('', [Validators.required, Validators.email]),
-      senha: new FormControl('', [Validators.required, Validators.minLength(6)])
+      email: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required])
     });
+  }
+  submit(): void{
+    this.http.post('http://localhost:3001/login', this.loginForm.value).subscribe(res => {
+      console.log(res);
+      this.router.navigate(['/forms-trabalhe']);
+    })
   }
   navegar() {
     this.router.navigate(['/cadastro']);

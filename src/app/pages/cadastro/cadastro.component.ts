@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from '../../components/tela-padrao/tela-padrao.component';
+import { LoginComponent } from '../../components/tela-padrao/login.component';
 import { InputsComponent } from '../../components/inputs/inputs.component';
 import { FormGroup, ReactiveFormsModule, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cadastro',
@@ -13,7 +14,10 @@ import { Router } from '@angular/router';
 })
 export class CadastroComponent {
   cadastroForm!: FormGroup;
-    constructor(private router: Router){
+    constructor(
+      private router: Router,
+      private http: HttpClient
+    ){
       this.cadastroForm = new FormGroup({
         name: new FormControl('', [Validators.required, Validators.minLength(3)]),
         email: new FormControl('', [Validators.required, Validators.email]),
@@ -22,6 +26,12 @@ export class CadastroComponent {
       })
     }
 
+    submit(): void{
+      this.http.post('http://localhost:3001/register', this.cadastroForm.value).subscribe(res => {
+        console.log(res);
+      });
+
+    }
     navegar (){
       this.router.navigate(['/login']);
     } 

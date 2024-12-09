@@ -3,6 +3,7 @@ title="Login"
 primaryBtnText="Entrar agora" 
 secondaryBtnText="Cadastrar"
 (navegar)="navegar()"
+(submit)="submit()"
 >
     <form [formGroup]="loginForm">
         <app-inputs 
@@ -13,10 +14,10 @@ secondaryBtnText="Cadastrar"
         placeholder="juanramalho@gmail.com">
         </app-inputs>
         <app-inputs 
-        formControlName="senha"
-         inputName="senha" 
+        formControlName="password"
+         inputName="password" 
          type="password" 
-         label="Senha"
+         label="senha"
         placeholder="Sua senha">
         </app-inputs>
     </form>

@@ -14,8 +14,8 @@ export class FormsTrabalheComponent {
 
   constructor(  private emailService: EmailRequestService) { }
   dados = {
-    nome: 'nome',
-    telefone: 'telefone',
+    nome: '',
+    telefone: '',
     email: '',
     cep: '',
     logradouro: '',

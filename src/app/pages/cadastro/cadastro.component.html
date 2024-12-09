@@ -2,7 +2,8 @@
     title="Crie sua conta"
     primaryBtnText="Cadastrar" 
     secondaryBtnText="Entrar agora"
-    (navegar)="navegar()">
+    (navegar)="navegar()"
+    (submit)="submit()">
     <form [formGroup]="cadastroForm">
         <app-inputs
         formControlName="name"

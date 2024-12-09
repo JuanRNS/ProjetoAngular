@@ -12,8 +12,13 @@ export class LoginComponent {
   @Input() title = '';
   @Input() primaryBtnText = '';
   @Input() secondaryBtnText = '';
+  
   @Output("navegar") onNavegar = new EventEmitter();
 
+  @Output("submit") onSubmit = new EventEmitter();
+  submit(){
+    this.onSubmit.emit();
+  }
   navegar() {
     this.onNavegar.emit();
   }

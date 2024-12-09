@@ -3,7 +3,7 @@
         <div class="container-login">
             <h2 class="form-title">{{title}}</h2>
             <ng-content></ng-content>
-            <div class="btn-wrapper">
+            <div class="btn-wrapper" (click)="submit()">
                 <button class="btn-primary">
                     {{ primaryBtnText }}
                 </button>
