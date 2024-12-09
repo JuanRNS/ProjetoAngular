@@ -17,7 +17,7 @@ export class FormsTrabalheComponent {
     nome: '',
     telefone: '',
     email: '',
-    cep: '',
+    CEP: '',
     logradouro: '',
     numero: '',
     bairro: '',
@@ -64,7 +64,7 @@ export class FormsTrabalheComponent {
     return (
       this.dados.nome.trim() &&
       this.dados.email.trim() &&
-      this.dados.cep.trim() &&
+      this.dados.CEP.trim() &&
       this.dados.descricao.trim()
     ) ? true : false;
   }
