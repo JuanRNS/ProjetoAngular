@@ -29,6 +29,7 @@ export class CadastroComponent {
     submit(): void{
       this.http.post('http://localhost:3001/register', this.cadastroForm.value).subscribe(res => {
         console.log(res);
+        this.router.navigate(['/login']);
       });
 
     }

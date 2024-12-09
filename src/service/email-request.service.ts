@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class EmailRequestService {
 
-  private apiUrl = 'http://localhost:3000/send ';
+  private apiUrl = 'http://localhost:3001/send ';
   
   constructor(private http: HttpClient) { }
 
